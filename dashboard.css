@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .container{
     display: grid;
@@ -11,15 +12,145 @@
 .sidebar{
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    background-color: aqua;
+    background-color: rgb(0, 145, 255);
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 4fr 5fr;
+    justify-content: center;
+    font-size: 1.3rem;
+
 }
+
+.sidebar ul{
+    list-style-type: none;
+    display: grid;
+}
+
+
 .header{
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    background-color: green;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(10,1fr);
 }
+
+.search-bar{
+    grid-row: 1 / 5;
+    grid-column: 1 / 7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+#search{
+    background-color: rgb(172, 171, 171); 
+    border: 0;
+    border-radius: 1.2em;
+    width: 80%;
+    height: 50%;
+}
+.small-profile{
+    grid-row: 1 / 5;
+    grid-column: 7 / 9;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.profile-photo{
+    background-size: cover;
+    min-width: 20%;
+    border-radius: 50%;
+    background-image: url(Screenshot\ 2023-12-04\ 185936.png);
+}
+.big-profile{
+    font-weight: bolder;
+    grid-row: 5 / 11;
+    grid-column: 1 / 7;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    gap: 1em;
+    padding-left: 2em;
+}
+.buttons{
+    grid-row: 5 / 11;
+    grid-column: 7 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+button{
+    background-color: rgb(0, 145, 255);
+    color: white;
+    min-width: 25%;
+    min-height: 40%;
+    border-radius: 2em;
+    border: 0;
+}
+
+
 .main-content{
     grid-column: 2 / 3;
     grid-row: 2 / 3;   
-    background-color: greenyellow;
+    background-color: rgb(215, 215, 215);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    padding: 1em;
 }
+
+
+.projects{
+    grid-row: 1/3;
+    grid-column: 1/4;
+}
+.project{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1em;
+}
+.card{
+    background-color: white;
+    min-height: 150px;
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 0.7em;
+}
+.icons{
+    justify-self: end;
+    display: flex;
+    gap:0.7em;
+}
+.notifications{
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr 5fr;
+}
+.announcments{
+    grid-row: 2/6;
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    padding:1em;
+    border-radius: 0.5em;
+}
+
+.trending{
+    grid-row: 8/12;
+    background-color: white;
+    border-radius: 0.5em;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+
+}
+.section{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1em;
+}
+
