@@ -115,7 +115,7 @@ button{
 }
 .card{
     background-color: white;
-    height: 11rem;
+    height: 8rem;
     display: grid;
     grid-template-rows: 1fr 8fr 1fr;
     gap: 1em;
