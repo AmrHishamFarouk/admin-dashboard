@@ -121,7 +121,8 @@ button{
     gap: 1em;
     padding: 1em;
     border-radius: 0.7em;
-    border-right: solid blue 6px;
+    border-left: solid #F0B329 0.5rem;
+    box-shadow: 5px 5px 7px -3px #a0a0a0;
 }
 .icons{
     justify-self: end;
@@ -140,6 +141,8 @@ button{
     border-radius: 0.5em;
     justify-items: center;
     align-items: center;
+    box-shadow: 5px 5px 7px -3px #a0a0a0;
+
 }
 
 .trending{
@@ -148,6 +151,8 @@ button{
     border-radius: 0.5em;
     display: grid;
     grid-template-rows: repeat(3,1fr);
+    box-shadow: 5px 5px 7px -3px #a0a0a0;
+
 
 }
 .section{
