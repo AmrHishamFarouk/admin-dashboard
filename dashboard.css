@@ -121,6 +121,7 @@ button{
     gap: 1em;
     padding: 1em;
     border-radius: 0.7em;
+    border-right: solid blue 6px;
 }
 .icons{
     justify-self: end;
